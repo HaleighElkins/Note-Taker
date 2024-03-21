@@ -1,22 +1,27 @@
-const express = require ('express');
-const fs = require ("fs");
 
-// This should be setting up the express app
-const app = express ();
-const PORT = process.env.PORT || 3001;
+const express = require('express');
+const fs = require("fs");
+const path = require('path');
+const app = express();
+const PORT = process.env.PORT || 5500;
 
-
-// Middleware
-//explain what urlencoded is
-app.use(express.urlencoded({ extended: true}));
+// Middleware to parse JSON request bodies
 app.use(express.json());
 
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-//  route handles 
-const apiRoutes = require ("./routes/api-routes");
-const htmlRoutes = require ("./routes/html-routes");
+// Middleware
+app.use(express.urlencoded({ extended: true }));
 
-//  next should be registering route handlers 
+// Import and initialize API routes
+const apiRoutes = require("./routes/route-api");
+const htmlRoutes = require("./routes/route-html");
+
+// Register route handlers
 apiRoutes(app);
-htmlRoutes (app);
+htmlRoutes(app);
 
+app.listen(PORT, function() {
+    console.log("APP listening on PORT" + PORT);
+});
