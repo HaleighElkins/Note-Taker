@@ -1,7 +1,7 @@
 
 const fs = require("fs");
 const util = require("util");
-var data = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+var data = JSON.parse(fs.readFileSync('./db.json', "utf8"));
 
 // Export module
 module.exports = function (app) {
@@ -29,7 +29,7 @@ module.exports = function (app) {
         data.push(newNote);
 
         // Write data to file asynchronously
-        fs.writeFile("./db/db.json", JSON.stringify(data), (err) => {
+        fs.writeFile("./db.json", JSON.stringify(data), (err) => {
             if (err) {
                 console.error(err);
                 res.status(500).json({ error: 'Failed to save your note' });
@@ -48,7 +48,7 @@ module.exports = function (app) {
             const filteredData = data.filter(currentNote => currentNote.id !== noteId);
 
             // Write updated data back to the file
-            fs.writeFile("./db/db.json", JSON.stringify(filteredData), (err) => {
+            fs.writeFile("./db.json", JSON.stringify(filteredData), (err) => {
                 if (err) {
                     console.error(err);
                     res.status(500).json({ error: 'Failed to delete the note' });
@@ -62,4 +62,5 @@ module.exports = function (app) {
         }
     });
 };
+
 
