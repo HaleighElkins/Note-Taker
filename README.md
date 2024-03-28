@@ -4,15 +4,22 @@
 
 AS A small business owner I WANT to be able to write and save notes SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
-# Screenshots 
+# Screenshots & Live URLs
+https://note-taker-1-00vu.onrender.com/
+https://note-taker-1-00vu.onrender.com/notes
+
+
 
 # Installation
+
 
 * Node.js
 * Express.js
 * Insomnia
 * JSON
 * SQL
+* npm i
+* npm run watch to start server
 
 # Acceptance Critera
 
