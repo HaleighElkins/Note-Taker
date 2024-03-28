@@ -41,7 +41,7 @@ https://note-taker-1-00vu.onrender.com/notes
 
 ## Credits 
 
-My Tutor Dru Sanchez helped with adding the extra index.js files to my routes to help route out properly. 
+My Tutor Dru Sanchez helped with adding the extra index.js files to my routes and api to help route out properly and correctly. 
 
 Routes : 
 
