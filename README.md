@@ -8,6 +8,10 @@ AS A small business owner I WANT to be able to write and save notes SO THAT I ca
 https://note-taker-1-00vu.onrender.com/
 https://note-taker-1-00vu.onrender.com/notes
 
+![Screenshot 2024-03-27 210404](https://github.com/HaleighElkins/Note-Taker/assets/152942336/e120eb89-7b88-4464-8ae5-ec9990af9e1f)
+
+
+![Screenshot 2024-03-27 210423](https://github.com/HaleighElkins/Note-Taker/assets/152942336/9fd0c869-2ef7-4a8c-8def-0eb25e82bf17)
 
 
 # Installation
